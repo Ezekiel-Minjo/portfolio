@@ -3,9 +3,391 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>Ezekiel Minjo - Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h1>Minjo's Portfolio</h1>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <a href="#home">Ezekiel Minjo</a>
+        </div>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#home" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills" class="nav-link">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            Hi, I'm <span class="highlight">Ezekiel Minjo</span>
+          </h1>
+          <h2 class="hero-subtitle">
+            Software Engineer | AI & Data Science Enthusiast
+          </h2>
+          <p class="hero-description">
+            Final year BSc. Software Engineering student passionate about
+            building intelligent systems that solve real-world problems through
+            AI, data science, and robust backend development.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">View My Project</a>
+            <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="ezekiel-minjo.jpg" alt="Ezekiel Minjo" />
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              I'm a final year BSc. Software Engineering student at The
+              Co-operative University of Kenya, graduating in December 2025. My
+              passion lies at the intersection of artificial intelligence, data
+              science, and robust backend development.
+            </p>
+            <p>
+              Through my academic journey and final year project, I've developed
+              expertise in building intelligent systems that leverage AI and
+              machine learning to solve real-world problems. I'm particularly
+              drawn to creating scalable backend solutions that can handle
+              complex data processing and provide meaningful insights.
+            </p>
+            <p>
+              As I prepare to enter the tech industry, I'm excited to contribute
+              to projects that make a positive impact, especially in areas like
+              agriculture, healthcare, and sustainable technology.
+            </p>
+            <div class="about-stats">
+              <div class="stat">
+                <h3>4th</h3>
+                <p>Year Student</p>
+              </div>
+              <div class="stat">
+                <h3>Dec 2025</h3>
+                <p>Graduation</p>
+              </div>
+              <div class="stat">
+                <h3>1</h3>
+                <p>Major Project</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <h2 class="section-title">Skills & Technologies</h2>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>Backend Development</h3>
+            <div class="skill-items">
+              <span class="skill-item">Python</span>
+              <span class="skill-item">Flask</span>
+              <span class="skill-item">RESTful APIs</span>
+              <span class="skill-item">Node.js</span>
+              <span class="skill-item">Express.js</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>AI & Data Science</h3>
+            <div class="skill-items">
+              <span class="skill-item">TensorFlow</span>
+              <span class="skill-item">Machine Learning</span>
+              <span class="skill-item">Data Analysis</span>
+              <span class="skill-item">Predictive Modeling</span>
+              <span class="skill-item">NumPy</span>
+              <span class="skill-item">Pandas</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Frontend Development</h3>
+            <div class="skill-items">
+              <span class="skill-item">React</span>
+              <span class="skill-item">JavaScript</span>
+              <span class="skill-item">HTML5</span>
+              <span class="skill-item">CSS3</span>
+              <span class="skill-item">Responsive Design</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Database & Tools</h3>
+            <div class="skill-items">
+              <span class="skill-item">MongoDB</span>
+              <span class="skill-item">MySQL</span>
+              <span class="skill-item">Git</span>
+              <span class="skill-item">GitHub</span>
+              <span class="skill-item">VS Code</span>
+              <span class="skill-item">Postman</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Systems & Integration</h3>
+            <div class="skill-items">
+              <span class="skill-item">IoT Integration</span>
+              <span class="skill-item">System Architecture</span>
+              <span class="skill-item">Performance Optimization</span>
+              <span class="skill-item">Load Testing</span>
+              <span class="skill-item">API Documentation</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Core Programming</h3>
+            <div class="skill-items">
+              <span class="skill-item">Java</span>
+              <span class="skill-item">C++</span>
+              <span class="skill-item">Data Structures</span>
+              <span class="skill-item">Algorithms</span>
+              <span class="skill-item">Object-Oriented Programming</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2 class="section-title">Featured Project</h2>
+        <div class="projects-grid">
+          <div class="project-card featured-project">
+            <div class="project-image">
+              <img
+                src="agriculture-dashboard.png"
+                alt="AI-Driven Agricultural System"
+              />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link" title="Live Demo"
+                    ><i class="fas fa-external-link-alt"></i
+                  ></a>
+                  <a
+                    href="https://github.com/Ezekiel-Minjo/AI-Driven-Agricultural-System.git"
+                    class="project-link"
+                    title="AI-Driven-Agricultural-System"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-badges">
+                <span class="badge badge-highlight">Lead Developer</span>
+                <span class="badge badge-institution"
+                  >Co-operative University of Kenya</span
+                >
+              </div>
+              <h3>AI-Driven Agricultural System for Farmers</h3>
+              <p class="project-duration">Sep 2024 – May 2025</p>
+              <p class="project-description">
+                Developed a comprehensive full-stack smart agriculture dashboard
+                that integrates AI and IoT technologies to empower smallholder
+                farmers with data-driven insights for improved crop management
+                and yield optimization.
+              </p>
+
+              <div class="project-features">
+                <h4>Key Features & Achievements:</h4>
+                <ul>
+                  <li>
+                    <strong>Real-time IoT Integration:</strong> Simulated
+                    sensors providing live soil moisture, temperature, and
+                    humidity data
+                  </li>
+                  <li>
+                    <strong>AI-Powered Insights:</strong> ML models for crop
+                    recommendation, yield prediction, and pest detection
+                  </li>
+                  <li>
+                    <strong>Scalable Backend:</strong> Flask API with MongoDB,
+                    handling 1,000+ concurrent users
+                  </li>
+                  <li>
+                    <strong>High Performance:</strong> Achieved 95% system
+                    uptime with robust error handling
+                  </li>
+                  <li>
+                    <strong>User-Centric Design:</strong> Intuitive React
+                    dashboard tailored for farmers
+                  </li>
+                </ul>
+              </div>
+
+              <div class="project-tech">
+                <span class="tech-frontend">React</span>
+                <span class="tech-backend">Python</span>
+                <span class="tech-backend">Flask</span>
+                <span class="tech-database">MongoDB</span>
+                <span class="tech-ai">TensorFlow</span>
+                <span class="tech-iot">IoT Simulation</span>
+              </div>
+
+              <div class="project-impact">
+                <div class="impact-stat">
+                  <span class="stat-number">95%</span>
+                  <span class="stat-label">System Uptime</span>
+                </div>
+                <div class="impact-stat">
+                  <span class="stat-number">100+</span>
+                  <span class="stat-label">Concurrent Users</span>
+                </div>
+                <div class="impact-stat">
+                  <span class="stat-number">3</span>
+                  <span class="stat-label">AI Models Deployed</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- You can add more projects here in the future -->
+          <div class="project-placeholder">
+            <div class="placeholder-content">
+              <i class="fas fa-plus-circle"></i>
+              <h3>More Projects Coming Soon</h3>
+              <p>
+                I'm continuously working on new projects to expand my portfolio.
+                Stay tuned for updates!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>Let's work together!</h3>
+            <p>
+              I'm always interested in hearing about new opportunities and
+              projects.
+            </p>
+            <div class="contact-details">
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <span>ezekielminjo4@example.com</span>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <span>+254 110 454 739</span>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Nairobi, Kenya</span>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Co-operative University of Kenya</span>
+              </div>
+            </div>
+            <div class="social-links">
+              <a
+                href="https://www.linkedin.com/in/ezekiel-minjo/"
+                class="social-link"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/Ezekiel-Minjo" class="social-link"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a href="https://x.com/Zeki_minjo" class="social-link"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </div>
+          </div>
+          <div class="contact-form">
+            <form id="contactForm">
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  placeholder="Subject"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Your Message"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2024 Ezekiel Minjo. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
