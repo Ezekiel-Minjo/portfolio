@@ -3,391 +3,1148 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ezekiel Minjo - Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-      <div class="nav-container">
-        <div class="nav-logo">
-          <a href="#home">Ezekiel Minjo</a>
-        </div>
-        <ul class="nav-menu">
-          <li class="nav-item">
-            <a href="#home" class="nav-link">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="#about" class="nav-link">About</a>
-          </li>
-          <li class="nav-item">
-            <a href="#skills" class="nav-link">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a href="#projects" class="nav-link">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a href="#contact" class="nav-link">Contact</a>
-          </li>
-        </ul>
-        <div class="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
-      </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-      <div class="hero-container">
-        <div class="hero-content">
-          <h1 class="hero-title">
-            Hi, I'm <span class="highlight">Ezekiel Minjo</span>
-          </h1>
-          <h2 class="hero-subtitle">
-            Software Engineer | AI & Data Science Enthusiast
-          </h2>
-          <p class="hero-description">
-            Final year BSc. Software Engineering student passionate about
-            building intelligent systems that solve real-world problems through
-            AI, data science, and robust backend development.
-          </p>
-          <div class="hero-buttons">
-            <a href="#projects" class="btn btn-primary">View My Project</a>
-            <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+    <!-- FAVICON -->
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon-for-website.png"
+      type="image/x-icon"
+    />
+
+    <!-- UNICONS -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+
+    <!-- Include Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <!-- SWIPER CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.css"
+    />
+
+    <title>Ezekiel Minjo</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">Ezekiel Minjo</a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">
+                <i class="uil uil-estate nav__icon"></i> Home
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">
+                <i class="uil uil-user nav__icon"></i> About
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">
+                <i class="uil uil-file-alt nav__icon"></i> Skills
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#services" class="nav__link">
+                <i class="uil uil-briefcase-alt nav__icon"></i> Services
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#portfolio" class="nav__link">
+                <i class="uil uil-scenery nav__icon"></i> Portfolio
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">
+                <i class="uil uil-message nav__icon"></i> Contact
+              </a>
+            </li>
+          </ul>
+          <i class="uil uil-times nav__close" id="nav-close"></i>
+        </div>
+
+        <div class="nav__btns">
+          <!-- Theme change button -->
+          <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="uil uil-apps"></i>
           </div>
         </div>
-        <div class="hero-image">
-          <!-- <img src="ezekiel-minjo.jpg" alt="Ezekiel Minjo" /> -->
-        </div>
-      </div>
-    </section>
+      </nav>
+    </header>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-      <div class="container">
-        <h2 class="section-title">About Me</h2>
-        <div class="about-content">
-          <div class="about-text">
-            <p>
+    <!--==================== MAIN ====================-->
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__content grid">
+            <div class="home__social">
+              <a
+                href="https://www.linkedin.com/in/ezekiel-minjo/"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <i class="uil uil-linkedin-alt"></i>
+              </a>
+              <a
+                href="https://github.com/Ezekiel-Minjo"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <i class="uil uil-github-alt"></i>
+              </a>
+              <a
+                href="https://x.com/Zeki_minjo"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <i class="uil uil-twitter-alt"></i>
+              </a>
+            </div>
+
+            <div class="home__img">
+              <!-- my image  -->
+              <!-- <svg
+                class="home__blob"
+                viewBox="0 0 200 187"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <mask id="mask0" mask-type="alpha">
+                  <path
+                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+                  />
+                </mask>
+                <g mask="url(#mask0)">
+                  <path
+                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+                  />
+
+                  <image
+                    class="home__blob-img"
+                    x="12"
+                    y="18"
+                    xlink:href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTcwIiBoZWlnaHQ9IjE3MCIgdmlld0JveD0iMCAwIDE3MCAxNzAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxNzAiIGhlaWdodD0iMTcwIiByeD0iODUiIGZpbGw9IiNDNEM0QzQiLz4KPC9zdmc+Cg=="
+                  />
+                </g>
+              </svg> -->
+            </div>
+
+            <div class="home__data">
+              <h1 class="home__title">Hi, I'm Minjo</h1>
+              <h3 class="home__subtitle">
+                Software Engineer | AI & Data Science Enthusiast
+              </h3>
+              <p class="home__description">
+                Software Engineer passionate about AI, web development, and
+                building intelligent, reliable, and scalable systems that solve
+                real-world problems.
+              </p>
+              <a href="#contact" class="button button--flex">
+                Contact Me<i class="uil uil-message button__icon"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="home__scroll">
+            <a href="#about" class="home__scroll-button button--flex">
+              <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+              <span class="home__scroll-name">Scroll down</span>
+              <i class="uil uil-arrow-down home__scroll-arrow"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== ABOUT ====================-->
+      <section class="about section" id="about">
+        <h2 class="section__title">About Me</h2>
+        <span class="section__subtitle">My introduction</span>
+
+        <div class="about__container container grid">
+          <img
+            src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjI1MCIgdmlld0JveD0iMCAwIDIwMCAyNTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjUwIiByeD0iMTAiIGZpbGw9IiNDNEM0QzQiLz4KPC9zdmc+Cg=="
+            alt=""
+            class="about__img"
+          />
+
+          <div class="about__data">
+            <p class="about__description">
               I'm a final year BSc. Software Engineering student at The
               Co-operative University of Kenya, graduating in December 2025. My
               passion lies at the intersection of artificial intelligence, data
-              science, and robust backend development.
+              science, and robust backend development. I love creating solutions
+              that make a positive impact.
             </p>
-            <p>
-              Through my academic journey and final year project, I've developed
-              expertise in building intelligent systems that leverage AI and
-              machine learning to solve real-world problems. I'm particularly
-              drawn to creating scalable backend solutions that can handle
-              complex data processing and provide meaningful insights.
-            </p>
-            <p>
-              As I prepare to enter the tech industry, I'm excited to contribute
-              to projects that make a positive impact, especially in areas like
-              agriculture, healthcare, and sustainable technology.
-            </p>
-            <div class="about-stats">
-              <div class="stat">
-                <h3>4th</h3>
-                <p>Year Student</p>
+
+            <!-- <div class="about__info">
+              <div>
+                <span class="about__info-title">4th</span>
+                <span class="about__info-name"
+                  >Year <br />
+                  Student</span
+                >
               </div>
-              <div class="stat">
-                <h3>Dec 2025</h3>
-                <p>Graduation</p>
+              <div>
+                <span class="about__info-title">Dec 2025</span>
+                <span class="about__info-name"
+                  >Graduation <br />
+                  Date</span
+                >
               </div>
-              <div class="stat">
-                <h3>1</h3>
-                <p>Major Project</p>
+              <div>
+                <span class="about__info-title">1+</span>
+                <span class="about__info-name"
+                  >Major <br />
+                  Project</span
+                >
               </div>
+            </div> -->
+
+            <div class="about__buttons">
+              <a href="#" class="button button--flex">
+                Download CV<i class="uil uil-download-alt button__icon"></i>
+              </a>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-      <div class="container">
-        <h2 class="section-title">Skills & Technologies</h2>
-        <div class="skills-grid">
-          <div class="skill-category">
-            <h3>Backend Development</h3>
-            <div class="skill-items">
-              <span class="skill-item">Python</span>
-              <span class="skill-item">Flask</span>
-              <span class="skill-item">RESTful APIs</span>
-              <span class="skill-item">Node.js</span>
-              <span class="skill-item">Express.js</span>
-            </div>
-          </div>
-          <div class="skill-category">
-            <h3>AI & Data Science</h3>
-            <div class="skill-items">
-              <span class="skill-item">TensorFlow</span>
-              <span class="skill-item">Machine Learning</span>
-              <span class="skill-item">Data Analysis</span>
-              <span class="skill-item">Predictive Modeling</span>
-              <span class="skill-item">NumPy</span>
-              <span class="skill-item">Pandas</span>
-            </div>
-          </div>
-          <div class="skill-category">
-            <h3>Frontend Development</h3>
-            <div class="skill-items">
-              <span class="skill-item">React</span>
-              <span class="skill-item">JavaScript</span>
-              <span class="skill-item">HTML5</span>
-              <span class="skill-item">CSS3</span>
-              <span class="skill-item">Responsive Design</span>
-            </div>
-          </div>
-          <div class="skill-category">
-            <h3>Database & Tools</h3>
-            <div class="skill-items">
-              <span class="skill-item">MongoDB</span>
-              <span class="skill-item">MySQL</span>
-              <span class="skill-item">Git</span>
-              <span class="skill-item">GitHub</span>
-              <span class="skill-item">VS Code</span>
-              <span class="skill-item">Postman</span>
-            </div>
-          </div>
-          <div class="skill-category">
-            <h3>Systems & Integration</h3>
-            <div class="skill-items">
-              <span class="skill-item">IoT Integration</span>
-              <span class="skill-item">System Architecture</span>
-              <span class="skill-item">Performance Optimization</span>
-              <span class="skill-item">Load Testing</span>
-              <span class="skill-item">API Documentation</span>
-            </div>
-          </div>
-          <div class="skill-category">
-            <h3>Core Programming</h3>
-            <div class="skill-items">
-              <span class="skill-item">Java</span>
-              <span class="skill-item">C++</span>
-              <span class="skill-item">Data Structures</span>
-              <span class="skill-item">Algorithms</span>
-              <span class="skill-item">Object-Oriented Programming</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+      <!--==================== SKILLS ====================-->
+      <section class="skills section" id="skills">
+        <h2 class="section__title">Skills</h2>
+        <span class="section__subtitle">My technical level</span>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-      <div class="container">
-        <h2 class="section-title">Featured Project</h2>
-        <div class="projects-grid">
-          <div class="project-card featured-project">
-            <div class="project-image">
-              <img
-                src="agriculture-dashboard.png"
-                alt="AI-Driven Agricultural System"
-              />
-              <div class="project-overlay">
-                <div class="project-links">
-                  <a href="#" class="project-link" title="Live Demo"
-                    ><i class="fas fa-external-link-alt"></i
-                  ></a>
-                  <a
-                    href="https://github.com/Ezekiel-Minjo/AI-Driven-Agricultural-System.git"
-                    class="project-link"
-                    title="AI-Driven-Agricultural-System"
-                    ><i class="fab fa-github"></i
-                  ></a>
+        <div class="skills__container container grid">
+          <!--==================== SKILLS 1====================-->
+          <div class="skills__content skills__open">
+            <div class="skills__header">
+              <i class="uil uil-brackets-curly skills__icon"></i>
+
+              <div>
+                <h1 class="skills__title">Backend Developer</h1>
+                <span class="skills__subtitle"></span>
+              </div>
+
+              <i class="uil uil-angle-down skills__arrow"></i>
+            </div>
+
+            <div class="skills__list grid">
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">Python</h3>
+                  <span class="skills__number">85%</span>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__python"></span>
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">Flask</h3>
+                  <span class="skills__number">80%</span>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__css"></span>
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">Node.js</h3>
+                  <span class="skills__number">75%</span>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__js"></span>
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">RESTful APIs</h3>
+                  <span class="skills__number">85%</span>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__node"></span>
                 </div>
               </div>
             </div>
-            <div class="project-info">
-              <div class="project-badges">
-                <span class="badge badge-highlight">Lead Developer</span>
-                <span class="badge badge-institution"
-                  >Co-operative University of Kenya</span
-                >
-              </div>
-              <h3>AI-Driven Agricultural System for Farmers</h3>
-              <p class="project-duration">Sep 2024 – May 2025</p>
-              <p class="project-description">
-                Developed a comprehensive full-stack smart agriculture dashboard
-                that integrates AI and IoT technologies to empower smallholder
-                farmers with data-driven insights for improved crop management
-                and yield optimization.
-              </p>
+          </div>
+          <!--==================== SKILLS 2====================-->
+          <div class="skills__content skills__close">
+            <div class="skills__header">
+              <i class="uil uil-brain skills__icon"></i>
 
-              <div class="project-features">
-                <h4>Key Features & Achievements:</h4>
-                <ul>
-                  <li>
-                    <strong>Real-time IoT Integration:</strong> Simulated
-                    sensors providing live soil moisture, temperature, and
-                    humidity data
+              <div>
+                <h1 class="skills__title">AI & Data Science</h1>
+                <span class="skills__subtitle"></span>
+              </div>
+
+              <i class="uil uil-angle-down skills__arrow"></i>
+            </div>
+
+            <div class="skills__list grid">
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">TensorFlow</h3>
+                  <span class="skills__number">80%</span>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__python"></span>
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">Machine Learning</h3>
+                  <span class="skills__number">85%</span>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__node"></span>
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">Data Analysis</h3>
+                  <span class="skills__number">80%</span>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__firebase"></span>
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">Predictive Modeling</h3>
+                  <span class="skills__number">75%</span>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__java"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--==================== SKILLS 3====================-->
+          <div class="skills__content skills__close">
+            <div class="skills__header">
+              <i class="uil uil-swatchbook skills__icon"></i>
+
+              <div>
+                <h1 class="skills__title">Frontend Development</h1>
+                <span class="skills__subtitle"></span>
+              </div>
+
+              <i class="uil uil-angle-down skills__arrow"></i>
+            </div>
+
+            <div class="skills__list grid">
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">React</h3>
+                  <span class="skills__number">70%</span>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__reactjs"></span>
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">JavaScript</h3>
+                  <span class="skills__number">85%</span>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__js"></span>
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">HTML5</h3>
+                  <span class="skills__number">90%</span>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__html"></span>
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">CSS3</h3>
+                  <span class="skills__number">80%</span>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__css"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== QUALIFICATION ====================-->
+      <section class="qualification section">
+        <h2 class="section__title">Qualification</h2>
+        <span class="section__subtitle">My personal journey</span>
+
+        <div class="qualification__container container">
+          <div class="qualification__tabs">
+            <div
+              class="qualification__button button--flex qualification__active"
+              data-target="#education"
+            >
+              <i class="uil uil-graduation-cap qualification__icon"></i>
+              Education
+            </div>
+            <div class="qualification__button button--flex" data-target="#work">
+              <i class="uil uil-briefcase-alt qualification__icon"></i>
+              Experience
+            </div>
+          </div>
+
+          <div class="qualification__sections">
+            <!--==================== QUALIFICATION CONTENT 1 ====================-->
+            <div
+              class="qualification__content qualification__active"
+              data-content
+              id="education"
+            >
+              <!--==================== QUALIFICATION 1 ====================-->
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">
+                    BSc. Software Engineering
+                  </h3>
+                  <span class="qualification__subtitle"
+                    >The Co-operative University of Kenya</span
+                  >
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2022 - 2025
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+              </div>
+
+              <!--==================== QUALIFICATION 2 ====================-->
+              <div class="qualification__data">
+                <div></div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+
+                <div>
+                  <h3 class="qualification__title">
+                    AI & Data Science Specialization
+                  </h3>
+                  <span class="qualification__subtitle"
+                    >Online Courses & Certifications</span
+                  >
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2024 - Present
+                  </div>
+                </div>
+              </div>
+
+              <!--==================== QUALIFICATION 3 ====================-->
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">Web Development</h3>
+                  <span class="qualification__subtitle"
+                    >Self-taught & Projects</span
+                  >
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2022 - Present
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                </div>
+              </div>
+            </div>
+            <!--==================== QUALIFICATION CONTENT 2 ====================-->
+            <div class="qualification__content" data-content id="work">
+              <!--==================== QUALIFICATION 1 ====================-->
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">
+                    Lead Developer - AI Agricultural System
+                  </h3>
+                  <span class="qualification__subtitle"
+                    >Final Year Project
+                  </span>
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    Sep 2024 – May 2025
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+              </div>
+
+              <!--==================== QUALIFICATION 2 ====================-->
+              <div class="qualification__data">
+                <div></div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+
+                <div>
+                  <h3 class="qualification__title">Freelance Developer</h3>
+                  <span class="qualification__subtitle">Various Projects</span>
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2023 - Present
+                  </div>
+                </div>
+              </div>
+
+              <!--==================== QUALIFICATION 3 ====================-->
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">
+                    Software Development Intern
+                  </h3>
+                  <span class="qualification__subtitle">Tech Startup</span>
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2023 - 2024
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--==================== SERVICES ====================-->
+      <section class="services section" id="services">
+        <h2 class="section__title">Services</h2>
+        <span class="section__subtitle">What I offer</span>
+
+        <div class="services__container container grid">
+          <!--==================== SERVICES 1 ====================-->
+          <div class="services__content">
+            <div>
+              <i class="uil uil-server-network services__icon"></i>
+              <h3 class="services__title">
+                Backend <br />
+                Development
+              </h3>
+            </div>
+
+            <span
+              class="button button--flex button--small button--link services__button"
+            >
+              View More
+              <i class="uil uil-arrow-right button__icon"></i>
+            </span>
+
+            <div class="services__modal">
+              <div class="services__modal-content">
+                <h4 class="services__modal-title">
+                  Backend <br />
+                  Development
+                </h4>
+                <i class="uil uil-times services__modal-close"></i>
+
+                <ul class="services__modal-services grid">
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>I develop robust server-side applications.</p>
                   </li>
-                  <li>
-                    <strong>AI-Powered Insights:</strong> ML models for crop
-                    recommendation, yield prediction, and pest detection
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>RESTful API design and implementation.</p>
                   </li>
-                  <li>
-                    <strong>Scalable Backend:</strong> Flask API with MongoDB,
-                    handling 1,000+ concurrent users
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>Database design and optimization.</p>
                   </li>
-                  <li>
-                    <strong>High Performance:</strong> Achieved 95% system
-                    uptime with robust error handling
-                  </li>
-                  <li>
-                    <strong>User-Centric Design:</strong> Intuitive React
-                    dashboard tailored for farmers
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>System architecture and scalability.</p>
                   </li>
                 </ul>
               </div>
+            </div>
+          </div>
+          <!--==================== SERVICES 2 ====================-->
+          <div class="services__content">
+            <div>
+              <i class="uil uil-brain services__icon"></i>
+              <h3 class="services__title">
+                AI & Machine <br />
+                Learning
+              </h3>
+            </div>
 
-              <div class="project-tech">
-                <span class="tech-frontend">React</span>
-                <span class="tech-backend">Python</span>
-                <span class="tech-backend">Flask</span>
-                <span class="tech-database">MongoDB</span>
-                <span class="tech-ai">TensorFlow</span>
-                <span class="tech-iot">IoT Simulation</span>
+            <span
+              class="button button--flex button--small button--link services__button"
+            >
+              View More
+              <i class="uil uil-arrow-right button__icon"></i>
+            </span>
+
+            <div class="services__modal">
+              <div class="services__modal-content">
+                <h4 class="services__modal-title">
+                  AI & Machine <br />
+                  Learning
+                </h4>
+                <i class="uil uil-times services__modal-close"></i>
+
+                <ul class="services__modal-services grid">
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>Machine learning model development.</p>
+                  </li>
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>Data analysis and visualization.</p>
+                  </li>
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>Predictive modeling and analytics.</p>
+                  </li>
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>AI system integration.</p>
+                  </li>
+                </ul>
               </div>
+            </div>
+          </div>
+          <!--==================== SERVICES 3 ====================-->
+          <div class="services__content">
+            <div>
+              <i class="uil uil-web-grid services__icon"></i>
+              <h3 class="services__title">
+                Full Stack <br />
+                Development
+              </h3>
+            </div>
 
-              <div class="project-impact">
-                <div class="impact-stat">
-                  <span class="stat-number">95%</span>
-                  <span class="stat-label">System Uptime</span>
-                </div>
-                <div class="impact-stat">
-                  <span class="stat-number">100+</span>
-                  <span class="stat-label">Concurrent Users</span>
-                </div>
-                <div class="impact-stat">
-                  <span class="stat-number">3</span>
-                  <span class="stat-label">AI Models Deployed</span>
-                </div>
+            <span
+              class="button button--flex button--small button--link services__button"
+            >
+              View More
+              <i class="uil uil-arrow-right button__icon"></i>
+            </span>
+
+            <div class="services__modal">
+              <div class="services__modal-content">
+                <h4 class="services__modal-title">
+                  Full Stack <br />
+                  Development
+                </h4>
+                <i class="uil uil-times services__modal-close"></i>
+
+                <ul class="services__modal-services grid">
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>Complete web application development.</p>
+                  </li>
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>Frontend and backend integration.</p>
+                  </li>
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>Responsive user interface design.</p>
+                  </li>
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>Performance optimization and testing.</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== PORTFOLIO ====================-->
+      <section class="portfolio section" id="portfolio">
+        <h2 class="section__title">Portfolio</h2>
+        <span class="section__subtitle">Most recent work</span>
+
+        <div class="portfolio__container container swiper mySwiper">
+          <div class="swiper-wrapper">
+            <!--==================== PORTFOLIO 1 ====================-->
+            <div class="portfolio__content grid swiper-slide">
+              <img src="" alt="" class="portfolio__img" />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">AI-Driven Agricultural System</h3>
+                <p class="portfolio__description">
+                  Comprehensive full-stack smart agriculture dashboard that
+                  integrates AI and IoT technologies to empower smallholder
+                  farmers with data-driven insights.
+                </p>
+                <a
+                  href="https://github.com/Ezekiel-Minjo/AI-Driven-Agricultural-System.git"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  View Project
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+            <!--==================== PORTFOLIO 2 ====================-->
+            <div class="portfolio__content grid swiper-slide">
+              <img src="" alt="" class="portfolio__img" />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Data Analytics Dashboard</h3>
+                <p class="portfolio__description">
+                  Interactive dashboard for data visualization and analytics
+                  using React and D3.js with real-time data processing
+                  capabilities.
+                </p>
+                <a
+                  href="#"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  View Project
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+            <!--==================== PORTFOLIO 3 ====================-->
+            <div class="portfolio__content grid swiper-slide">
+              <img src="" alt="" class="portfolio__img" />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">ML Prediction Model</h3>
+                <p class="portfolio__description">
+                  Machine learning model for crop yield prediction using
+                  TensorFlow and Python with 95% accuracy in testing phase.
+                </p>
+                <a
+                  href="#"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  View Project
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
               </div>
             </div>
           </div>
 
-          <!-- You can add more projects here in the future -->
-          <div class="project-placeholder">
-            <div class="placeholder-content">
-              <i class="fas fa-plus-circle"></i>
-              <h3>More Projects Coming Soon</h3>
-              <p>
-                I'm continuously working on new projects to expand my portfolio.
-                Stay tuned for updates!
+          <!-- Add arrows -->
+          <div class="swiper-button-next">
+            <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+          </div>
+          <!-- Add pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <!--==================== PROJECT IN MIND ====================-->
+      <section class="project section">
+        <div class="project__bg">
+          <div class="project__container container grid">
+            <div class="project__data">
+              <h2 class="project__title">You have a new project?</h2>
+              <p class="project__description">
+                Contact me now and let's discuss how I can help you build
+                amazing AI-powered solutions!
               </p>
+              <a href="#contact" class="button button--flex button--white">
+                Contact Me
+                <i class="uil uil-message project__icon button__icon"></i>
+              </a>
             </div>
+
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjMyIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIzMiAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMzIiIGhlaWdodD0iMjAwIiByeD0iMTAiIGZpbGw9IndoaXRlIiBmaWxsLW9wYWNpdHk9IjAuMSIvPgo8Y2lyY2xlIGN4PSIxMTYiIGN5PSIxMDAiIHI9IjUwIiBmaWxsPSJ3aGl0ZSIgZmlsbC1vcGFjaXR5PSIwLjIiLz4KPC9zdmc+Cg=="
+              alt=""
+              class="project__img"
+            />
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-      <div class="container">
-        <h2 class="section-title">Get In Touch</h2>
-        <div class="contact-content">
-          <div class="contact-info">
-            <h3>Let's work together!</h3>
-            <p>
-              I'm always interested in hearing about new opportunities and
-              projects.
-            </p>
-            <div class="contact-details">
-              <div class="contact-item">
-                <i class="fas fa-envelope"></i>
-                <span>ezekielminjo4@example.com</span>
-              </div>
-              <div class="contact-item">
-                <i class="fas fa-phone"></i>
-                <span>+254 110 454 739</span>
-              </div>
-              <div class="contact-item">
-                <i class="fas fa-map-marker-alt"></i>
-                <span>Nairobi, Kenya</span>
-              </div>
-              <div class="contact-item">
-                <i class="fas fa-graduation-cap"></i>
-                <span>Co-operative University of Kenya</span>
+      <!--==================== TESTIMONIAL ====================-->
+      <section class="testimonial section">
+        <h2 class="section__title">Testimonial</h2>
+        <span class="section__subtitle">What others say</span>
+      </section>
+
+      <!--==================== CONTACT ME ====================-->
+      <section class="contact section" id="contact">
+        <h2 class="section__title">Contact Me</h2>
+        <span class="section__subtitle">Get in touch</span>
+
+        <div class="contact__container container grid">
+          <div>
+            <div class="contact__information">
+              <i class="uil uil-phone contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title">Call Me</h3>
+                <span class="contact__subtitle">+254 110 454 739</span>
               </div>
             </div>
-            <div class="social-links">
-              <a
-                href="https://www.linkedin.com/in/ezekiel-minjo/"
-                class="social-link"
-                ><i class="fab fa-linkedin"></i
-              ></a>
-              <a href="https://github.com/Ezekiel-Minjo" class="social-link"
-                ><i class="fab fa-github"></i
-              ></a>
-              <a href="https://x.com/Zeki_minjo" class="social-link"
-                ><i class="fab fa-twitter"></i
-              ></a>
+
+            <div class="contact__information">
+              <i class="uil uil-envelope contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title">Email</h3>
+                <span class="contact__subtitle">ezekielminjo4@example.com</span>
+              </div>
+            </div>
+
+            <div class="contact__information">
+              <i class="uil uil-map-marker contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title">Location</h3>
+                <span class="contact__subtitle">Nairobi, Kenya</span>
+              </div>
             </div>
           </div>
-          <div class="contact-form">
-            <form id="contactForm">
-              <div class="form-group">
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  placeholder="Your Name"
-                  required
-                />
+
+          <form action="" class="contact__form grid">
+            <div class="contact__inputs grid">
+              <div class="contact__content">
+                <label for="" class="contact__label">Name</label>
+                <input type="text" class="contact__input" />
               </div>
-              <div class="form-group">
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="Your Email"
-                  required
-                />
+              <div class="contact__content">
+                <label for="" class="contact__label">Email</label>
+                <input type="email" class="contact__input" />
               </div>
-              <div class="form-group">
-                <input
-                  type="text"
-                  id="subject"
-                  name="subject"
-                  placeholder="Subject"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <textarea
-                  id="message"
-                  name="message"
-                  placeholder="Your Message"
-                  rows="5"
-                  required
-                ></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary">
+            </div>
+            <div class="contact__content">
+              <label for="" class="contact__label">Subject</label>
+              <input type="text" class="contact__input" />
+            </div>
+            <div class="contact__content">
+              <label for="" class="contact__label">Message</label>
+              <textarea
+                name=""
+                id=""
+                cols="0"
+                rows="7"
+                class="contact__input"
+              ></textarea>
+            </div>
+
+            <div>
+              <a href="#" class="button button--flex">
                 Send Message
-              </button>
-            </form>
+                <i class="uil uil-message button__icon"></i>
+              </a>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+      <div class="footer__bg">
+        <div class="footer__container container grid">
+          <div>
+            <h1 class="footer__title">Ezekiel Minjo</h1>
+            <span class="footer__subtitle">Software Engineer</span>
+          </div>
+
+          <ul class="footer__links">
+            <li>
+              <a href="#services" class="footer__link">Services</a>
+            </li>
+
+            <li>
+              <a href="#portfolio" class="footer__link">Portfolio</a>
+            </li>
+
+            <li>
+              <a href="#contact" class="footer__link">Contact</a>
+            </li>
+          </ul>
+
+          <div class="footer__socials">
+            <a
+              href="https://www.linkedin.com/in/ezekiel-minjo/"
+              target="_blank"
+              class="footer__social"
+            >
+              <i class="uil uil-linkedin-alt"></i>
+            </a>
+
+            <a
+              href="https://github.com/Ezekiel-Minjo"
+              target="_blank"
+              class="footer__social"
+            >
+              <i class="uil uil-github-alt"></i>
+            </a>
+
+            <a
+              href="https://x.com/Zeki_minjo"
+              target="_blank"
+              class="footer__social"
+            >
+              <i class="uil uil-twitter-alt"></i>
+            </a>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container">
-        <p>&copy; 2024 Ezekiel Minjo. All rights reserved.</p>
+        <p class="footer__copy">&#169; Ezekiel Minjo. All rights reserved</p>
       </div>
     </footer>
 
-    <script src="script.js"></script>
+    <!--==================== SCROLL TOP ====================-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+
+    <!--==================== SWIPER JS ====================-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
+
+    <!--==================== MAIN JS ====================-->
+    <script>
+      /*==================== MENU SHOW Y HIDDEN ====================*/
+      const navMenu = document.getElementById("nav-menu"),
+        navToggle = document.getElementById("nav-toggle"),
+        navClose = document.getElementById("nav-close");
+
+      /*===== MENU SHOW =====*/
+      /* Validate if constant exists */
+      if (navToggle) {
+        navToggle.addEventListener("click", () => {
+          navMenu.classList.add("show-menu");
+        });
+      }
+
+      /*===== MENU HIDDEN =====*/
+      /* Validate if constant exists */
+      if (navClose) {
+        navClose.addEventListener("click", () => {
+          navMenu.classList.remove("show-menu");
+        });
+      }
+
+      /*==================== REMOVE MENU MOBILE ====================*/
+      const navLink = document.querySelectorAll(".nav__link");
+
+      function linkAction() {
+        const navMenu = document.getElementById("nav-menu");
+        /*When we click on each nav__link, we remove the show-menu class*/
+        navMenu.classList.remove("show-menu");
+      }
+      navLink.forEach((n) => n.addEventListener("click", linkAction));
+
+      /*==================== ACCORDION SKILLS ====================*/
+      const skillsContent = document.getElementsByClassName("skills__content"),
+        skillsHeader = document.querySelectorAll(".skills__header");
+
+      function toggleSkills() {
+        let itemClass = this.parentNode.className;
+
+        for (i = 0; i < skillsContent.length; i++) {
+          skillsContent[i].className = "skills__content skills__close";
+        }
+        if (itemClass === "skills__content skills__close") {
+          this.parentNode.className = "skills__content skills__open";
+        }
+      }
+
+      skillsHeader.forEach((el) => {
+        el.addEventListener("click", toggleSkills);
+      });
+
+      /*==================== QUALIFICATION TABS ====================*/
+      const tabs = document.querySelectorAll("[data-target]"),
+        tabContents = document.querySelectorAll("[data-content]");
+
+      tabs.forEach((tab) => {
+        tab.addEventListener("click", () => {
+          const target = document.querySelector(tab.dataset.target);
+
+          tabContents.forEach((tabContent) => {
+            tabContent.classList.remove("qualification__active");
+          });
+          target.classList.add("qualification__active");
+
+          tabs.forEach((tab) => {
+            tab.classList.remove("qualification__active");
+          });
+          tab.classList.add("qualification__active");
+        });
+      });
+
+      /*==================== SERVICES MODAL ====================*/
+      const modalViews = document.querySelectorAll(".services__modal"),
+        modalButtons = document.querySelectorAll(".services__button"),
+        modalCloses = document.querySelectorAll(".services__modal-close");
+
+      let modal = function (modalClick) {
+        modalViews[modalClick].classList.add("active-modal");
+      };
+
+      modalButtons.forEach((modalButton, i) => {
+        modalButton.addEventListener("click", () => {
+          modal(i);
+        });
+      });
+
+      modalCloses.forEach((modalClose) => {
+        modalClose.addEventListener("click", () => {
+          modalViews.forEach((modalView) => {
+            modalView.classList.remove("active-modal");
+          });
+        });
+      });
+
+      /*==================== PORTFOLIO SWIPER  ====================*/
+      let swiperPortfolio = new Swiper(".portfolio__container", {
+        cssMode: true,
+        loop: true,
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+
+      /*==================== TESTIMONIAL ====================*/
+      let swiperTestimonial = new Swiper(".testimonial__container", {
+        grabCursor: true,
+        spaceBetween: 48,
+        loop: true,
+
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          dynamicBullets: true,
+        },
+        breakpoints: {
+          568: {
+            slidesPerView: 1,
+          },
+        },
+      });
+
+      /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
+      const sections = document.querySelectorAll("section[id]");
+
+      function scrollActive() {
+        const scrollY = window.pageYOffset;
+
+        sections.forEach((current) => {
+          const sectionHeight = current.offsetHeight;
+          const sectionTop = current.offsetTop - 50;
+          let sectionId = current.getAttribute("id");
+
+          if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+            document
+              .querySelector(".nav__menu a[href*=" + sectionId + "]")
+              .classList.add("active-link");
+          } else {
+            document
+              .querySelector(".nav__menu a[href*=" + sectionId + "]")
+              .classList.remove("active-link");
+          }
+        });
+      }
+      window.addEventListener("scroll", scrollActive);
+
+      /*==================== CHANGE BACKGROUND HEADER ====================*/
+      function scrollHeader() {
+        const nav = document.getElementById("header");
+        // When the scroll is greater than 200 viewport height, add the scroll-header class to the header tag
+        if (this.scrollY >= 80) nav.classList.add("scroll-header");
+        else nav.classList.remove("scroll-header");
+      }
+      window.addEventListener("scroll", scrollHeader);
+
+      /*==================== SHOW SCROLL UP ====================*/
+      function scrollUp() {
+        const scrollUp = document.getElementById("scroll-up");
+        // When the scroll is higher than 560 viewport height, add the show-scroll class to the "a" tag with the scroll
+        if (this.scrollY >= 560) scrollUp.classList.add("show-scroll");
+        else scrollUp.classList.remove("show-scroll");
+      }
+      window.addEventListener("scroll", scrollUp);
+
+      /*==================== DARK LIGHT THEME ====================*/
+      const themeButton = document.getElementById("theme-button");
+      const darkTheme = "dark-theme";
+      const iconTheme = "uil-sun";
+
+      // Previously selected topic (if user selected)
+      const selectedTheme = localStorage.getItem("selected-theme");
+      const selectedIcon = localStorage.getItem("selected-icon");
+
+      // We obtain the current theme that the interface has by validating the dark-theme class
+      const getCurrentTheme = () =>
+        document.body.classList.contains(darkTheme) ? "dark" : "light";
+      const getCurrentIcon = () =>
+        themeButton.classList.contains(iconTheme) ? "uil-moon" : "uil-sun";
+
+      // We validate if the user previously chose a topic
+      if (selectedTheme) {
+        // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
+        document.body.classList[selectedTheme === "dark" ? "add" : "remove"](
+          darkTheme
+        );
+        themeButton.classList[selectedIcon === "uil-moon" ? "add" : "remove"](
+          iconTheme
+        );
+      }
+
+      // Activate / deactivate the theme manually with the button
+      themeButton.addEventListener("click", () => {
+        // Add or remove the dark / icon theme
+        document.body.classList.toggle(darkTheme);
+        themeButton.classList.toggle(iconTheme);
+        // We save the theme and the current icon that the user chose
+        localStorage.setItem("selected-theme", getCurrentTheme());
+        localStorage.setItem("selected-icon", getCurrentIcon());
+      });
+    </script>
   </body>
 </html>
