@@ -2,1217 +2,1285 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ezekiel Minjo Portfolio</title>
 
-    <!-- FAVICON -->
-    <link rel="shortcut icon" href="assets/img/image.png" type="image/x-icon" />
-
-    <!-- UNICONS -->
+    <!--
+    - favicon
+  -->
     <link
-      rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+      rel="shortcut icon"
+      href="./assets/images/logo.png"
+      type="image/x-icon"
     />
 
-    <!-- Include Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
+    <!--
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-    <!-- SWIPER CSS -->
+    <!--
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.css"
     />
-
-    <title>Ezekiel Minjo</title>
-    <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
-    <!--==================== HEADER ====================-->
-    <header class="header" id="header">
-      <nav class="nav container">
-        <a href="#" class="nav__logo">Ezekiel Minjo</a>
+    <!--
+    - #MAIN
+  -->
 
-        <div class="nav__menu" id="nav-menu">
-          <ul class="nav__list grid">
-            <li class="nav__item">
-              <a href="#home" class="nav__link active-link">
-                <i class="uil uil-estate nav__icon"></i> Home
+    <main>
+      <!--
+      - #SIDEBAR
+    -->
+
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img src="./assets/images/minjo.png" alt="Zeki Minjo" width="80" />
+          </figure>
+
+          <div class="info-content">
+            <h1 class="name" title="Om Kharche">Ezekiel Minjo</h1>
+
+            <p class="title">Software Engineer</p>
+          </div>
+
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+        </div>
+
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+
+                <a href="mailto:ezekielminjo4@gmail.com" class="contact-link"
+                  >ezekielminjo4@gmail.com</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
+
+                <a href="tel:+254110454739" class="contact-link"
+                  >+254 110454739</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="calendar-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Birthday</p>
+
+                <time datetime="1982-06-23">20 December, 2002</time>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+
+                <address>Nairobi, Kenya</address>
+              </div>
+            </li>
+          </ul>
+
+          <div class="separator"></div>
+
+          <ul class="social-list">
+            <li class="social-item">
+              <a
+                href="https://www.linkedin.com/in/ezekiel-minjo/"
+                class="social-link"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+                <!-- <ion-icon name="logo-facebook"></ion-icon> -->
               </a>
             </li>
-            <li class="nav__item">
-              <a href="#about" class="nav__link">
-                <i class="uil uil-user nav__icon"></i> About
+
+            <li class="social-item">
+              <a href="https://github.com/Ezekiel-Minjo" class="social-link">
+                <ion-icon name="logo-github"></ion-icon>
               </a>
             </li>
-            <li class="nav__item">
-              <a href="#skills" class="nav__link">
-                <i class="uil uil-file-alt nav__icon"></i> Skills
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#services" class="nav__link">
-                <i class="uil uil-briefcase-alt nav__icon"></i> Services
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#portfolio" class="nav__link">
-                <i class="uil uil-scenery nav__icon"></i> Portfolio
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#contact" class="nav__link">
-                <i class="uil uil-message nav__icon"></i> Contact
+
+            <li class="social-item">
+              <a href="https://x.com/Zeki_minjo" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+                <!-- <ion-icon name="logo-instagram"></ion-icon> -->
               </a>
             </li>
           </ul>
-          <i class="uil uil-times nav__close" id="nav-close"></i>
         </div>
+      </aside>
 
-        <div class="nav__btns">
-          <!-- Theme change button -->
-          <i class="uil uil-moon change-theme" id="theme-button"></i>
+      <!--
+      - #main-content
+    -->
 
-          <div class="nav__toggle" id="nav-toggle">
-            <i class="uil uil-apps"></i>
-          </div>
-        </div>
-      </nav>
-    </header>
+      <div class="main-content">
+        <!--
+        - #NAVBAR
+      -->
 
-    <!--==================== MAIN ====================-->
-    <main class="main">
-      <!--==================== HOME ====================-->
-      <section class="home section" id="home">
-        <div class="home__container container grid">
-          <div class="home__content grid">
-            <div class="home__social">
-              <a
-                href="https://www.linkedin.com/in/ezekiel-minjo/"
-                target="_blank"
-                class="home__social-icon"
-              >
-                <i class="uil uil-linkedin-alt"></i>
-              </a>
-              <a
-                href="https://github.com/Ezekiel-Minjo"
-                target="_blank"
-                class="home__social-icon"
-              >
-                <i class="uil uil-github-alt"></i>
-              </a>
-              <a
-                href="https://x.com/Zeki_minjo"
-                target="_blank"
-                class="home__social-icon"
-              >
-                <i class="uil uil-twitter-alt"></i>
-              </a>
-            </div>
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
 
-            <div class="home__img">
-              <!-- my image  -->
-              <svg
-                class="home__blob"
-                viewBox="0 0 200 187"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-              >
-                <mask id="mask0" mask-type="alpha">
-                  <path
-                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
-                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
-                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
-                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
-                  />
-                </mask>
-                <g mask="url(#mask0)">
-                  <path
-                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
-                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
-                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
-                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
-                  />
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
 
-                  <image
-                    class="home__blob-img"
-                    x="12"
-                    y="18"
-                    xlink:href="assets/img/minjo.png"
-                  />
-                </g>
-              </svg>
-            </div>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Portfolio</button>
+            </li>
 
-            <div class="home__data">
-              <h1 class="home__title">Hi, I'm Minjo</h1>
-              <h3 class="home__subtitle">
-                Software Engineer | AI & Data Science Enthusiast
-              </h3>
-              <p class="home__description">
-                Software Engineer passionate about AI, web development, and
-                building intelligent, reliable, and scalable systems that solve
-                real-world problems.
-              </p>
-              <a href="#contact" class="button button--flex">
-                Contact Me<i class="uil uil-message button__icon"></i>
-              </a>
-            </div>
-          </div>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Blog</button>
+            </li>
 
-          <div class="home__scroll">
-            <a href="#about" class="home__scroll-button button--flex">
-              <i class="uil uil-mouse-alt home__scroll-mouse"></i>
-              <span class="home__scroll-name">Scroll down</span>
-              <i class="uil uil-arrow-down home__scroll-arrow"></i>
-            </a>
-          </div>
-        </div>
-      </section>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contact</button>
+            </li>
+          </ul>
+        </nav>
 
-      <!--==================== ABOUT ====================-->
-      <section class="about section" id="about">
-        <h2 class="section__title">About Me</h2>
-        <span class="section__subtitle">My introduction</span>
+        <!--
+        - #ABOUT
+      -->
 
-        <div class="about__container container grid">
-          <img src="assets/img/image2.jpg" alt="" class="about__img" />
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
 
-          <div class="about__data">
-            <p class="about__description">
-              I'm a final year BSc. Software Engineering student at The
-              Co-operative University of Kenya, graduating in December 2025. My
-              passion lies at the intersection of artificial intelligence, data
-              science, and robust backend development. I love creating solutions
-              that make a positive impact.
+          <section class="about-text">
+            <p>
+              I’m a Software Engineer based in Nairobi, Kenya, with a strong
+              interest in AI, data-driven systems, and building meaningful
+              digital products. I enjoy breaking down complex problems and
+              turning them into practical, reliable, and scalable solutions that
+              solve real-world needs.
             </p>
+
+            <p>
+              My work focuses on creating applications that are functional,
+              intuitive, and easy to use, while remaining clean and maintainable
+              behind the scenes. I enjoy collaborating with others, learning
+              through real projects, and refining ideas from concept to
+              execution. My goal is to build thoughtful, impactful software that
+              delivers value and stands the test of time.
+            </p>
+          </section>
+
+          <!--
+          - service
+        -->
+
+          <section class="service">
+            <h3 class="h3 service-title">What i'm doing</h3>
+
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-dev.svg
+                "
+                    alt="design icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Web Development</h4>
+
+                  <p class="service-item-text">
+                    Building functional, user-friendly websites and web
+                    applications with a strong focus on reliability,
+                    performance, and maintainability.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-dev.svg"
+                    alt="Web development icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Backend Development</h4>
+
+                  <p class="service-item-text">
+                    Developing robust server-side systems, designing and
+                    implementing RESTful APIs, and working with databases to
+                    ensure scalable and efficient application logic.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/AI-machine.png"
+                    alt="mobile app icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">AI & Machine Learning</h4>
+
+                  <p class="service-item-text">
+                    Working on machine learning models, data analysis, and
+                    predictive systems, with a focus on applying AI to solve
+                    real-world problems and support intelligent decision-making.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/data.png"
+                    alt="camera icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">
+                    Data Analysis & Visualization
+                  </h4>
+
+                  <p class="service-item-text">
+                    Analyzing datasets, extracting meaningful insights, and
+                    presenting results through clear and understandable
+                    visualizations.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <!--
+          - testimonials
+        -->
+
+          <section class="testimonials">
+            <h3 class="h3 testimonials-title">Testimonials</h3>
+
+            <ul class="testimonials-list has-scrollbar">
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/avatar-1.png"
+                      alt="Daniel lewis"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Brian
+                  </h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Culpa perspiciatis consectetur totam tenetur ex
+                      repellendus, a quia. Consectetur accusantium voluptatum
+                      vero sapiente amet maxime qui dignissimos distinctio!
+                      Asperiores, autem quasi?
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/avatar-2.png"
+                      alt="Jessica miller"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Marrion
+                  </h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Ex, ipsam ducimus sint culpa facere totam assumenda
+                      reiciendis perspiciatis magni expedita dolores magnam
+                      ullam asperiores. Voluptate nemo quisquam unde autem
+                      minus!
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/avatar-3.png"
+                      alt="Emily evans"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Emily evans
+                  </h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Alias recusandae dignissimos esse ea? Architecto, sed,
+                      doloremque nam velit minus nostrum modi est facere sint
+                      dicta nisi enim perferendis, necessitatibus earum.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/avatar-4.png"
+                      alt="Henry william"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Henry william
+                  </h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Deleniti, aspernatur, provident odio ipsa sapiente quis
+                      molestiae ducimus expedita minus doloribus voluptatem
+                      pariatur, cum ratione nesciunt vitae quas repellat. Quae,
+                      quia.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <!--
+          - testimonials modal
+        -->
+
+          <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay></div>
+
+            <section class="testimonials-modal">
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+
+              <div class="modal-img-wrapper">
+                <figure class="modal-avatar-box">
+                  <img
+                    src="./assets/images/avatar-1.png"
+                    alt="Daniel lewis"
+                    width="80"
+                    data-modal-img
+                  />
+                </figure>
+
+                <img src="./assets/images/icon-quote.svg" alt="quote icon" />
+              </div>
+
+              <div class="modal-content">
+                <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+                <!-- <time datetime="2021-06-14">14 June, 2021</time> -->
+
+                <div data-modal-text>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Esse est eligendi animi provident reprehenderit adipisci
+                    odio unde perspiciatis! Iure dolor facere dicta nobis et
+                    suscipit obcaecati, cum deserunt perspiciatis mollitia?
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <!--
+          - clients
+        -->
+
+          <section class="clients">
+            <!-- <h3 class="h3 clients-title">Clients</h3>
+
+            <ul class="clients-list has-scrollbar">
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="./assets/images/logo-1-color.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="./assets/images/logo-2-color.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="./assets/images/logo-3-color.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="./assets/images/logo-4-color.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="./assets/images/logo-5-color.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="./assets/images/logo-6-color.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
+            </ul> -->
+          </section>
+        </article>
+
+        <!--
+        - #RESUME
+      -->
+
+        <article class="resume" data-page="resume">
+          <header>
+            <h2 class="h2 article-title">Resume</h2>
+          </header>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Education</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  The Cooperative University Of Kenya
+                </h4>
+
+                <span>2021 — 2025</span>
+
+                <p class="timeline-text">
+                  Relevant Coursework: Data Structures, Algorithms, Database
+                  Systems, Artificial Intelligence, Software Development
+                  Practices.<br />
+                  Built foundational skills in data handling, programming, and
+                  analytical problem-solving applicable to data analysis and
+                  modeling.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">eMobilis Bootcamp</h4>
+
+                <span>2025 — 2025</span>
+
+                <p class="timeline-text">
+                  Website Development Scholarship Program - Django and Daraja
+                  Mpesa Intergration
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Mbita High School</h4>
+
+                <span>2017 — 2020</span>
+
+                <p class="timeline-text">General Highschool Education</p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Experience</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  AI-Driven Agricultural System for Farmers
+                </h4>
+
+                <span>09/2024 — 05/2025</span>
+
+                <p class="timeline-text">
+                  Collected and pre-processed real-time agricultural data using
+                  Python (NumPy/Pandas) from APIs, including cleaning and
+                  transformation for analysis.<br />
+                  Performed exploratory data analysis to identify patterns in
+                  crop yield and environmental trends, developing machine
+                  learning models for optimization.<br />
+                  Built interactive dashboards with React and JavaScript for
+                  data visualization, enabling stakeholders to access insights
+                  via charts and reports.<br />
+                  Validated models through testing and debugging, documenting
+                  workflows for reproducibility and future reference.<br />
+                  Collaborated with team members to integrate domain knowledge,
+                  delivering innovative solutions for farmers.<br />
+                  Tech: React, JavaScript, Python/Flask, REST APIs
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Front-End Developer Intern - Shambah Solutions
+                </h4>
+
+                <span>05/2024 — 08/2024</span>
+
+                <p class="timeline-text">
+                  Developed dynamic web interfaces using React and JavaScript,
+                  incorporating data from backend APIs for real-time updates.<br />
+                  Optimized data handling in UI components, ensuring efficient
+                  performance and user-friendly visualizations.<br />
+                  Participated in agile sprints, code reviews, and team
+                  collaboration to maintain high-quality, maintainable code.<br />
+                  Contributed to data-related features, such as state management
+                  for displaying trends and insights.<br />
+                  Tech: React, JavaScript, HTML, CSS
+                </p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="skill">
+            <h3 class="h3 skills-title">My skills</h3>
+
+            <ul class="skills-list content-card">
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Backend Development</h5>
+                  <data value="80">80%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">AI & Machine Learning</h5>
+                  <data value="70">70%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Web Development</h5>
+                  <data value="90">90%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 90%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Data Analysis & Visualization</h5>
+                  <data value="50">50%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 50%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Frontend Development</h5>
+                  <data value="50">80%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
+            </ul>
 
             <div class="about__buttons">
               <a
                 href="assets/docs/EZEKIEL-MINJO-Resume.pdf"
-                class="button button--flex"
+                class="h2 article-title"
               >
-                Download CV<i class="uil uil-download-alt button__icon"></i>
+                DownLoad CV <ion-icon name="document-attach-outline"></ion-icon>
               </a>
             </div>
-          </div>
-        </div>
-      </section>
+          </section>
+        </article>
 
-      <!--==================== SKILLS ====================-->
-      <section class="skills section" id="skills">
-        <h2 class="section__title">Skills</h2>
-        <span class="section__subtitle">My technical level</span>
+        <!--
+        - #PORTFOLIO
+      -->
 
-        <div class="skills__container container grid">
-          <!--==================== SKILLS 1====================-->
-          <div class="skills__content skills__open">
-            <div class="skills__header">
-              <i class="uil uil-brackets-curly skills__icon"></i>
+        <article class="portfolio" data-page="portfolio">
+          <header>
+            <h2 class="h2 article-title">Portfolio</h2>
+          </header>
 
-              <div>
-                <h1 class="skills__title">Backend Developer</h1>
-                <span class="skills__subtitle"></span>
-              </div>
+          <section class="projects">
+            <ul class="filter-list">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
+              </li>
 
-              <i class="uil uil-angle-down skills__arrow"></i>
+              <li class="filter-item">
+                <button data-filter-btn>Web design</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>Applications</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>Web development</button>
+              </li>
+            </ul>
+
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-selecct-value>
+                  Select category
+                </div>
+
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
+
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Web design</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Applications</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Web development</button>
+                </li>
+              </ul>
             </div>
 
-            <div class="skills__list grid">
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <h3 class="skills__name">Python</h3>
-                  <span class="skills__number">85%</span>
-                </div>
-                <div class="skills__bar">
-                  <span class="skills__percentage skills__python"></span>
-                </div>
-              </div>
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <h3 class="skills__name">Flask</h3>
-                  <span class="skills__number">80%</span>
-                </div>
-                <div class="skills__bar">
-                  <span class="skills__percentage skills__css"></span>
-                </div>
-              </div>
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <h3 class="skills__name">Node.js</h3>
-                  <span class="skills__number">75%</span>
-                </div>
-                <div class="skills__bar">
-                  <span class="skills__percentage skills__js"></span>
-                </div>
-              </div>
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <h3 class="skills__name">RESTful APIs</h3>
-                  <span class="skills__number">85%</span>
-                </div>
-                <div class="skills__bar">
-                  <span class="skills__percentage skills__node"></span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--==================== SKILLS 2====================-->
-          <div class="skills__content skills__close">
-            <div class="skills__header">
-              <i class="uil uil-brain skills__icon"></i>
+            <ul class="project-list">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="https://project-tracking-system-ruddy.vercel.app/">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-              <div>
-                <h1 class="skills__title">AI & Data Science</h1>
-                <span class="skills__subtitle"></span>
-              </div>
+                    <img
+                      src="./assets/images/tracking-system.png"
+                      alt="Task management"
+                      loading="lazy"
+                    />
+                  </figure>
 
-              <i class="uil uil-angle-down skills__arrow"></i>
-            </div>
+                  <h3 class="project-title">Tracking System</h3>
 
-            <div class="skills__list grid">
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <h3 class="skills__name">TensorFlow</h3>
-                  <span class="skills__number">80%</span>
-                </div>
-                <div class="skills__bar">
-                  <span class="skills__percentage skills__python"></span>
-                </div>
-              </div>
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <h3 class="skills__name">Machine Learning</h3>
-                  <span class="skills__number">85%</span>
-                </div>
-                <div class="skills__bar">
-                  <span class="skills__percentage skills__node"></span>
-                </div>
-              </div>
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <h3 class="skills__name">Data Analysis</h3>
-                  <span class="skills__number">80%</span>
-                </div>
-                <div class="skills__bar">
-                  <span class="skills__percentage skills__firebase"></span>
-                </div>
-              </div>
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <h3 class="skills__name">Predictive Modeling</h3>
-                  <span class="skills__number">75%</span>
-                </div>
-                <div class="skills__bar">
-                  <span class="skills__percentage skills__java"></span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!--==================== SKILLS 3====================-->
-          <div class="skills__content skills__close">
-            <div class="skills__header">
-              <i class="uil uil-swatchbook skills__icon"></i>
-
-              <div>
-                <h1 class="skills__title">Frontend Development</h1>
-                <span class="skills__subtitle"></span>
-              </div>
-
-              <i class="uil uil-angle-down skills__arrow"></i>
-            </div>
-
-            <div class="skills__list grid">
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <h3 class="skills__name">React</h3>
-                  <span class="skills__number">70%</span>
-                </div>
-                <div class="skills__bar">
-                  <span class="skills__percentage skills__reactjs"></span>
-                </div>
-              </div>
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <h3 class="skills__name">JavaScript</h3>
-                  <span class="skills__number">85%</span>
-                </div>
-                <div class="skills__bar">
-                  <span class="skills__percentage skills__js"></span>
-                </div>
-              </div>
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <h3 class="skills__name">HTML5</h3>
-                  <span class="skills__number">90%</span>
-                </div>
-                <div class="skills__bar">
-                  <span class="skills__percentage skills__html"></span>
-                </div>
-              </div>
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <h3 class="skills__name">CSS3</h3>
-                  <span class="skills__number">80%</span>
-                </div>
-                <div class="skills__bar">
-                  <span class="skills__percentage skills__css"></span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- SKILLS 4 -->
-          <div class="skills__content skills__close">
-            <div class="skills__header">
-              <i class="uil uil-window-restore skills__icon"></i>
-
-              <div>
-                <h1 class="skills__title">Web Development</h1>
-                <span class="skills__subtitle"></span>
-              </div>
-
-              <i class="uil uil-angle-down skills__arrow"></i>
-            </div>
-
-            <div class="skills__list grid">
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <h3 class="skills__name">React</h3>
-                  <span class="skills__number">70%</span>
-                </div>
-                <div class="skills__bar">
-                  <span class="skills__percentage skills__reactjs"></span>
-                </div>
-              </div>
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <h3 class="skills__name">Node.js</h3>
-                  <span class="skills__number">95%</span>
-                </div>
-                <div class="skills__bar">
-                  <span class="skills__percentage skills__js"></span>
-                </div>
-              </div>
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <h3 class="skills__name">Larvel</h3>
-                  <span class="skills__number">70%</span>
-                </div>
-                <div class="skills__bar">
-                  <span class="skills__percentage skills__html"></span>
-                </div>
-              </div>
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <h3 class="skills__name">flask</h3>
-                  <span class="skills__number">85%</span>
-                </div>
-                <div class="skills__bar">
-                  <span class="skills__percentage skills__css"></span>
-                </div>
-              </div>
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <h3 class="skills__name">Express.js</h3>
-                  <span class="skills__number">90%</span>
-                </div>
-                <div class="skills__bar">
-                  <span class="skills__percentage skills__html"></span>
-                </div>
-              </div>
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <h3 class="skills__name">Django</h3>
-                  <span class="skills__number">85%</span>
-                </div>
-                <div class="skills__bar">
-                  <span class="skills__percentage skills__html"></span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!--==================== QUALIFICATION ====================-->
-      <section class="qualification section">
-        <h2 class="section__title">Qualification</h2>
-        <span class="section__subtitle">My personal journey</span>
-
-        <div class="qualification__container container">
-          <div class="qualification__tabs">
-            <div
-              class="qualification__button button--flex qualification__active"
-              data-target="#education"
-            >
-              <i class="uil uil-graduation-cap qualification__icon"></i>
-              Education
-            </div>
-            <div class="qualification__button button--flex" data-target="#work">
-              <i class="uil uil-briefcase-alt qualification__icon"></i>
-              Experience
-            </div>
-          </div>
-
-          <div class="qualification__sections">
-            <!--==================== QUALIFICATION CONTENT 1 ====================-->
-            <div
-              class="qualification__content qualification__active"
-              data-content
-              id="education"
-            >
-              <!--==================== QUALIFICATION 1 ====================-->
-              <div class="qualification__data">
-                <div>
-                  <h3 class="qualification__title">
-                    BSc. Software Engineering
-                  </h3>
-                  <span class="qualification__subtitle"
-                    >The Co-operative University of Kenya</span
-                  >
-                  <div class="qualification__calendar">
-                    <i class="uil uil-calendar-alt"></i>
-                    2022 - 2025
-                  </div>
-                </div>
-
-                <div>
-                  <span class="qualification__rounder"></span>
-                  <span class="qualification__line"></span>
-                </div>
-              </div>
-
-              <!--==================== QUALIFICATION 2 ====================-->
-              <div class="qualification__data">
-                <div></div>
-
-                <div>
-                  <span class="qualification__rounder"></span>
-                  <span class="qualification__line"></span>
-                </div>
-
-                <div>
-                  <h3 class="qualification__title">
-                    AI & Data Science Specialization
-                  </h3>
-                  <span class="qualification__subtitle"
-                    >Online Courses & Certifications</span
-                  >
-                  <div class="qualification__calendar">
-                    <i class="uil uil-calendar-alt"></i>
-                    2024 - Present
-                  </div>
-                </div>
-              </div>
-
-              <!--==================== QUALIFICATION 3 ====================-->
-              <div class="qualification__data">
-                <div>
-                  <h3 class="qualification__title">Web Development</h3>
-                  <span class="qualification__subtitle"
-                    >Self-taught & Projects</span
-                  >
-                  <div class="qualification__calendar">
-                    <i class="uil uil-calendar-alt"></i>
-                    2022 - Present
-                  </div>
-                </div>
-
-                <div>
-                  <span class="qualification__rounder"></span>
-                </div>
-              </div>
-            </div>
-            <!--==================== QUALIFICATION CONTENT 2 ====================-->
-            <div class="qualification__content" data-content id="work">
-              <!--==================== QUALIFICATION 1 ====================-->
-              <div class="qualification__data">
-                <div>
-                  <h3 class="qualification__title">
-                    Lead Developer - AI Agricultural System
-                  </h3>
-                  <span class="qualification__subtitle"
-                    >Final Year Project
-                  </span>
-                  <div class="qualification__calendar">
-                    <i class="uil uil-calendar-alt"></i>
-                    Sep 2024 – May 2025
-                  </div>
-                </div>
-
-                <div>
-                  <span class="qualification__rounder"></span>
-                  <span class="qualification__line"></span>
-                </div>
-              </div>
-
-              <!--==================== QUALIFICATION 2 ====================-->
-              <div class="qualification__data">
-                <div></div>
-
-                <div>
-                  <span class="qualification__rounder"></span>
-                  <span class="qualification__line"></span>
-                </div>
-
-                <div>
-                  <h3 class="qualification__title">Freelance Developer</h3>
-                  <span class="qualification__subtitle">Various Projects</span>
-                  <div class="qualification__calendar">
-                    <i class="uil uil-calendar-alt"></i>
-                    2023 - Present
-                  </div>
-                </div>
-              </div>
-
-              <!--==================== QUALIFICATION 3 ====================-->
-              <div class="qualification__data">
-                <div>
-                  <h3 class="qualification__title">
-                    Software Development Intern
-                  </h3>
-                  <span class="qualification__subtitle">Tech Startup</span>
-                  <div class="qualification__calendar">
-                    <i class="uil uil-calendar-alt"></i>
-                    2023 - 2024
-                  </div>
-                </div>
-
-                <div>
-                  <span class="qualification__rounder"></span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--==================== SERVICES ====================-->
-      <section class="services section" id="services">
-        <h2 class="section__title">Services</h2>
-        <span class="section__subtitle">What I offer</span>
-
-        <div class="services__container container grid">
-          <!--==================== SERVICES 1 ====================-->
-          <div class="services__content">
-            <div>
-              <i class="uil uil-server-network services__icon"></i>
-              <h3 class="services__title">
-                Backend <br />
-                Development
-              </h3>
-            </div>
-
-            <span
-              class="button button--flex button--small button--link services__button"
-            >
-              View More
-              <i class="uil uil-arrow-right button__icon"></i>
-            </span>
-
-            <div class="services__modal">
-              <div class="services__modal-content">
-                <h4 class="services__modal-title">
-                  Backend <br />
-                  Development
-                </h4>
-                <i class="uil uil-times services__modal-close"></i>
-
-                <ul class="services__modal-services grid">
-                  <li class="services__modal-service">
-                    <i class="uil uil-check-circle services__modal-icon"></i>
-                    <p>I develop robust server-side applications.</p>
-                  </li>
-                  <li class="services__modal-service">
-                    <i class="uil uil-check-circle services__modal-icon"></i>
-                    <p>RESTful API design and implementation.</p>
-                  </li>
-                  <li class="services__modal-service">
-                    <i class="uil uil-check-circle services__modal-icon"></i>
-                    <p>Database design and optimization.</p>
-                  </li>
-                  <li class="services__modal-service">
-                    <i class="uil uil-check-circle services__modal-icon"></i>
-                    <p>System architecture and scalability.</p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <!--==================== SERVICES 2 ====================-->
-          <div class="services__content">
-            <div>
-              <i class="uil uil-brain services__icon"></i>
-              <h3 class="services__title">
-                AI & Machine <br />
-                Learning
-              </h3>
-            </div>
-
-            <span
-              class="button button--flex button--small button--link services__button"
-            >
-              View More
-              <i class="uil uil-arrow-right button__icon"></i>
-            </span>
-
-            <div class="services__modal">
-              <div class="services__modal-content">
-                <h4 class="services__modal-title">
-                  AI & Machine <br />
-                  Learning
-                </h4>
-                <i class="uil uil-times services__modal-close"></i>
-
-                <ul class="services__modal-services grid">
-                  <li class="services__modal-service">
-                    <i class="uil uil-check-circle services__modal-icon"></i>
-                    <p>Machine learning model development.</p>
-                  </li>
-                  <li class="services__modal-service">
-                    <i class="uil uil-check-circle services__modal-icon"></i>
-                    <p>Data analysis and visualization.</p>
-                  </li>
-                  <li class="services__modal-service">
-                    <i class="uil uil-check-circle services__modal-icon"></i>
-                    <p>Predictive modeling and analytics.</p>
-                  </li>
-                  <li class="services__modal-service">
-                    <i class="uil uil-check-circle services__modal-icon"></i>
-                    <p>AI system integration.</p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <!--==================== SERVICES 3 ====================-->
-          <div class="services__content">
-            <div>
-              <i class="uil uil-web-grid services__icon"></i>
-              <h3 class="services__title">
-                Full Stack <br />
-                Development
-              </h3>
-            </div>
-
-            <span
-              class="button button--flex button--small button--link services__button"
-            >
-              View More
-              <i class="uil uil-arrow-right button__icon"></i>
-            </span>
-
-            <div class="services__modal">
-              <div class="services__modal-content">
-                <h4 class="services__modal-title">
-                  Full Stack <br />
-                  Development
-                </h4>
-                <i class="uil uil-times services__modal-close"></i>
-
-                <ul class="services__modal-services grid">
-                  <li class="services__modal-service">
-                    <i class="uil uil-check-circle services__modal-icon"></i>
-                    <p>Complete web application development.</p>
-                  </li>
-                  <li class="services__modal-service">
-                    <i class="uil uil-check-circle services__modal-icon"></i>
-                    <p>Frontend and backend integration.</p>
-                  </li>
-                  <li class="services__modal-service">
-                    <i class="uil uil-check-circle services__modal-icon"></i>
-                    <p>Responsive user interface design.</p>
-                  </li>
-                  <li class="services__modal-service">
-                    <i class="uil uil-check-circle services__modal-icon"></i>
-                    <p>Performance optimization and testing.</p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!--==================== PORTFOLIO ====================-->
-      <section class="portfolio section" id="portfolio">
-        <h2 class="section__title">Portfolio</h2>
-        <span class="section__subtitle">Most recent work</span>
-
-        <div class="portfolio__container container swiper mySwiper">
-          <div class="swiper-wrapper">
-            <!--==================== PORTFOLIO 1 ====================-->
-            <div class="portfolio__content grid swiper-slide">
-              <img
-                src="assets/img/agriculture-dashboard.png"
-                alt=""
-                class="portfolio__img"
-              />
-
-              <div class="portfolio__data">
-                <h3 class="portfolio__title">AI-Driven Agricultural System</h3>
-                <p class="portfolio__description">
-                  Comprehensive full-stack smart agriculture dashboard that
-                  integrates AI and IoT technologies to empower smallholder
-                  farmers with data-driven insights.
-                </p>
-                <a
-                  href="https://github.com/Ezekiel-Minjo/AI-Driven-Agricultural-System.git"
-                  class="button button--flex button--small portfolio__button"
-                >
-                  View Project
-                  <i class="uil uil-arrow-right button__icon"></i>
+                  <p class="project-category">Web development</p>
                 </a>
-              </div>
-            </div>
-            <!--==================== PORTFOLIO 2 ====================-->
-            <div class="portfolio__content grid swiper-slide">
-              <img src="" alt="" class="portfolio__img" />
+              </li>
 
-              <div class="portfolio__data">
-                <h3 class="portfolio__title">Data Analytics Dashboard</h3>
-                <p class="portfolio__description">
-                  Interactive dashboard for data visualization and analytics
-                  using React and D3.js with real-time data processing
-                  capabilities.
-                </p>
-                <a
-                  href="#"
-                  class="button button--flex button--small portfolio__button"
-                >
-                  View Project
-                  <i class="uil uil-arrow-right button__icon"></i>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="https://goalify-xi.vercel.app/">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/Goal.png"
+                      alt="orizon"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Smart Goal Planner</h3>
+
+                  <p class="project-category">Web development</p>
                 </a>
-              </div>
-            </div>
-            <!--==================== PORTFOLIO 3 ====================-->
-            <div class="portfolio__content grid swiper-slide">
-              <img src="" alt="" class="portfolio__img" />
+              </li>
 
-              <div class="portfolio__data">
-                <h3 class="portfolio__title">ML Prediction Model</h3>
-                <p class="portfolio__description">
-                  Machine learning model for crop yield prediction using
-                  TensorFlow and Python with 95% accuracy in testing phase.
-                </p>
-                <a
-                  href="#"
-                  class="button button--flex button--small portfolio__button"
-                >
-                  View Project
-                  <i class="uil uil-arrow-right button__icon"></i>
+              <!-- <li
+                class="project-item active"
+                data-filter-item
+                data-category="web design"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-3.jpg"
+                      alt="fundo"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Fundo</h3>
+
+                  <p class="project-category">Web design</p>
                 </a>
-              </div>
-            </div>
-          </div>
+              </li> -->
 
-          <!-- Add arrows -->
-          <div class="swiper-button-next">
-            <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
-          </div>
-          <div class="swiper-button-prev">
-            <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
-          </div>
-          <!-- Add pagination -->
-          <div class="swiper-pagination"></div>
-        </div>
-      </section>
+              <!-- <li
+                class="project-item active"
+                data-filter-item
+                data-category="applications"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-      <!--==================== PROJECT IN MIND ====================-->
-      <section class="project section">
-        <div class="project__bg">
-          <div class="project__container container grid">
-            <div class="project__data">
-              <h2 class="project__title">You have a new project?</h2>
-              <p class="project__description">
-                Contact me now and let's discuss how I can help you build
-                amazing AI-powered solutions!
-              </p>
-              <a href="#contact" class="button button--flex button--white">
-                Contact Me
-                <i class="uil uil-message project__icon button__icon"></i>
-              </a>
-            </div>
+                    <img
+                      src="./assets/images/project-4.png"
+                      alt="brawlhalla"
+                      loading="lazy"
+                    />
+                  </figure>
 
-            <img
-              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjMyIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIzMiAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMzIiIGhlaWdodD0iMjAwIiByeD0iMTAiIGZpbGw9IndoaXRlIiBmaWxsLW9wYWNpdHk9IjAuMSIvPgo8Y2lyY2xlIGN4PSIxMTYiIGN5PSIxMDAiIHI9IjUwIiBmaWxsPSJ3aGl0ZSIgZmlsbC1vcGFjaXR5PSIwLjIiLz4KPC9zdmc+Cg=="
-              alt=""
-              class="project__img"
-            />
-          </div>
-        </div>
-      </section>
+                  <h3 class="project-title">Brawlhalla</h3>
 
-      <!--==================== TESTIMONIAL ====================-->
-      <section class="testimonial section">
-        <h2 class="section__title">Testimonial</h2>
-        <span class="section__subtitle">What others say</span>
-      </section>
+                  <p class="project-category">Applications</p>
+                </a>
+              </li> -->
 
-      <!--==================== CONTACT ME ====================-->
-      <section class="contact section" id="contact">
-        <h2 class="section__title">Contact Me</h2>
-        <span class="section__subtitle">Get in touch</span>
+              <!-- <li
+                class="project-item active"
+                data-filter-item
+                data-category="web design"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-        <div class="contact__container container grid">
-          <div>
-            <div class="contact__information">
-              <i class="uil uil-phone contact__icon"></i>
+                    <img
+                      src="./assets/images/project-5.png"
+                      alt="dsm."
+                      loading="lazy"
+                    />
+                  </figure>
 
-              <div>
-                <h3 class="contact__title">Call Me</h3>
-                <span class="contact__subtitle">+254 110 454 739</span>
-              </div>
-            </div>
+                  <h3 class="project-title">DSM.</h3>
 
-            <div class="contact__information">
-              <i class="uil uil-envelope contact__icon"></i>
+                  <p class="project-category">Web design</p>
+                </a>
+              </li> -->
 
-              <div>
-                <h3 class="contact__title">Email</h3>
-                <span class="contact__subtitle">ezekielminjo4@example.com</span>
-              </div>
-            </div>
+              <!-- <li
+                class="project-item active"
+                data-filter-item
+                data-category="web design"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-            <div class="contact__information">
-              <i class="uil uil-map-marker contact__icon"></i>
+                    <img
+                      src="./assets/images/project-6.png"
+                      alt="metaspark"
+                      loading="lazy"
+                    />
+                  </figure>
 
-              <div>
-                <h3 class="contact__title">Location</h3>
-                <span class="contact__subtitle">Nairobi, Kenya</span>
-              </div>
-            </div>
-          </div>
+                  <h3 class="project-title">MetaSpark</h3>
 
-          <form
-            action="https://formspree.io/f/maqnvggr"
-            method="POST"
-            class="contact__form grid"
-          >
-            <div class="contact__inputs grid">
-              <div class="contact__content">
-                <label for="name" class="contact__label">Name</label>
+                  <p class="project-category">Web design</p>
+                </a>
+              </li> -->
+
+              <!-- <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-7.png"
+                      alt="summary"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Summary</h3>
+
+                  <p class="project-category">Web development</p>
+                </a>
+              </li> -->
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="applications"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/agriculture-dashboard.png"
+                      alt="task manager"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Task Manager</h3>
+
+                  <p class="project-category">Applications</p>
+                </a>
+              </li>
+
+              <!-- <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-9.png"
+                      alt="arrival"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Arrival</h3>
+
+                  <p class="project-category">Web development</p>
+                </a>
+              </li> -->
+            </ul>
+          </section>
+        </article>
+
+        <!--
+        - #BLOG
+      -->
+
+        <article class="blog" data-page="blog">
+          <header>
+            <h2 class="h2 article-title">Blog</h2>
+          </header>
+
+          <section class="blog-posts">
+            <ul class="blog-posts-list">
+              <!-- <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-1.jpg"
+                      alt="Design conferences in 2022"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">
+                      Design conferences in 2022
+                    </h3>
+
+                    <p class="blog-text">
+                      Veritatis et quasi architecto beatae vitae dicta sunt,
+                      explicabo.
+                    </p>
+                  </div>
+                </a>
+              </li> -->
+
+              <!-- <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-2.jpg"
+                      alt="Best fonts every designer"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">
+                      Best fonts every designer
+                    </h3>
+
+                    <p class="blog-text">
+                      Sed ut perspiciatis, nam libero tempore, cum soluta nobis
+                      est eligendi.
+                    </p>
+                  </div>
+                </a>
+              </li> -->
+
+              <!-- <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-3.jpg"
+                      alt="Design digest #80"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">Design digest #80</h3>
+
+                    <p class="blog-text">
+                      Excepteur sint occaecat cupidatat no proident, quis
+                      nostrum exercitationem ullam corporis suscipit.
+                    </p>
+                  </div>
+                </a>
+              </li> -->
+
+              <!-- <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-4.jpg"
+                      alt="UI interactions of the week"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">
+                      UI interactions of the week
+                    </h3>
+
+                    <p class="blog-text">
+                      Enim ad minim veniam, consectetur adipiscing elit, quis
+                      nostrud exercitation ullamco laboris nisi.
+                    </p>
+                  </div>
+                </a>
+              </li> -->
+
+              <!-- <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-5.jpg"
+                      alt="The forgotten art of spacing"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">
+                      The forgotten art of spacing
+                    </h3>
+
+                    <p class="blog-text">
+                      Maxime placeat, sed do eiusmod tempor incididunt ut labore
+                      et dolore magna aliqua.
+                    </p>
+                  </div>
+                </a>
+              </li> -->
+
+              <!-- <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-6.jpg"
+                      alt="Design digest #79"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">Design digest #79</h3>
+
+                    <p class="blog-text">
+                      Optio cumque nihil impedit uo minus quod maxime placeat,
+                      velit esse cillum.
+                    </p>
+                  </div>
+                </a>
+              </li> -->
+            </ul>
+          </section>
+        </article>
+
+        <!--
+        - #CONTACT
+      -->
+
+        <article class="contact" data-page="contact">
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
+
+          <section class="mapbox" data-mapbox>
+            <figure>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127641.17044270078!2d36.764995805983!3d-1.3030359783408325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1172d84d49a7%3A0xf7cf0254b297924c!2sNairobi!5e0!3m2!1sen!2ske!4v1769589822661!5m2!1sen!2ske"
+                width="400"
+                height="300"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+              <!-- <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
+                width="400"
+                height="300"
+                loading="lazy"
+              ></iframe> -->
+            </figure>
+          </section>
+
+          <section class="contact-form">
+            <h3 class="h3 form-title">Contact Form</h3>
+
+            <form action="#" class="form" data-form>
+              <div class="input-wrapper">
                 <input
                   type="text"
-                  name="name"
-                  id="name"
-                  class="contact__input"
+                  name="fullname"
+                  class="form-input"
+                  placeholder="Full name"
                   required
+                  data-form-input
                 />
-              </div>
-              <div class="contact__content">
-                <label for="email" class="contact__label">Email</label>
+
                 <input
                   type="email"
                   name="email"
-                  id="email"
-                  class="contact__input"
+                  class="form-input"
+                  placeholder="Email address"
                   required
+                  data-form-input
                 />
               </div>
-            </div>
-            <div class="contact__content">
-              <label for="subject" class="contact__label">Subject</label>
-              <input
-                type="text"
-                name="subject"
-                id="subject"
-                class="contact__input"
-                required
-              />
-            </div>
-            <div class="contact__content">
-              <label for="message" class="contact__label">Message</label>
+
               <textarea
                 name="message"
-                id="message"
-                cols="0"
-                rows="7"
-                class="contact__input"
+                class="form-input"
+                placeholder="Your Message"
                 required
+                data-form-input
               ></textarea>
-            </div>
 
-            <div>
-              <button type="submit" class="button button--flex">
-                Send Message
-                <i class="uil uil-message button__icon"></i>
+              <button class="form-btn" type="submit" disabled data-form-btn>
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
               </button>
-            </div>
-          </form>
-        </div>
-      </section>
+            </form>
+          </section>
+        </article>
+      </div>
     </main>
 
-    <!--==================== FOOTER ====================-->
-    <footer class="footer">
-      <div class="footer__bg">
-        <div class="footer__container container grid">
-          <div>
-            <h1 class="footer__title">Ezekiel Minjo</h1>
-            <span class="footer__subtitle">Software Engineer</span>
-          </div>
+    <!--
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
 
-          <ul class="footer__links">
-            <li>
-              <a href="#services" class="footer__link">Services</a>
-            </li>
-
-            <li>
-              <a href="#portfolio" class="footer__link">Portfolio</a>
-            </li>
-
-            <li>
-              <a href="#contact" class="footer__link">Contact</a>
-            </li>
-          </ul>
-
-          <div class="footer__socials">
-            <a
-              href="https://www.linkedin.com/in/ezekiel-minjo/"
-              target="_blank"
-              class="footer__social"
-            >
-              <i class="uil uil-linkedin-alt"></i>
-            </a>
-
-            <a
-              href="https://github.com/Ezekiel-Minjo"
-              target="_blank"
-              class="footer__social"
-            >
-              <i class="uil uil-github-alt"></i>
-            </a>
-
-            <a
-              href="https://x.com/Zeki_minjo"
-              target="_blank"
-              class="footer__social"
-            >
-              <i class="uil uil-twitter-alt"></i>
-            </a>
-          </div>
-        </div>
-
-        <p class="footer__copy">&#169; Ezekiel Minjo. All rights reserved</p>
-      </div>
-    </footer>
-
-    <!--==================== SCROLL TOP ====================-->
-    <a href="#" class="scrollup" id="scroll-up">
-      <i class="uil uil-arrow-up scrollup__icon"></i>
-    </a>
-
-    <!--==================== SWIPER JS ====================-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
-
-    <!--==================== MAIN JS ====================-->
-    <script>
-      /*==================== MENU SHOW Y HIDDEN ====================*/
-      const navMenu = document.getElementById("nav-menu"),
-        navToggle = document.getElementById("nav-toggle"),
-        navClose = document.getElementById("nav-close");
-
-      /*===== MENU SHOW =====*/
-      /* Validate if constant exists */
-      if (navToggle) {
-        navToggle.addEventListener("click", () => {
-          navMenu.classList.add("show-menu");
-        });
-      }
-
-      /*===== MENU HIDDEN =====*/
-      /* Validate if constant exists */
-      if (navClose) {
-        navClose.addEventListener("click", () => {
-          navMenu.classList.remove("show-menu");
-        });
-      }
-
-      /*==================== REMOVE MENU MOBILE ====================*/
-      const navLink = document.querySelectorAll(".nav__link");
-
-      function linkAction() {
-        const navMenu = document.getElementById("nav-menu");
-        /*When we click on each nav__link, we remove the show-menu class*/
-        navMenu.classList.remove("show-menu");
-      }
-      navLink.forEach((n) => n.addEventListener("click", linkAction));
-
-      /*==================== ACCORDION SKILLS ====================*/
-      const skillsContent = document.getElementsByClassName("skills__content"),
-        skillsHeader = document.querySelectorAll(".skills__header");
-
-      function toggleSkills() {
-        let itemClass = this.parentNode.className;
-
-        for (i = 0; i < skillsContent.length; i++) {
-          skillsContent[i].className = "skills__content skills__close";
-        }
-        if (itemClass === "skills__content skills__close") {
-          this.parentNode.className = "skills__content skills__open";
-        }
-      }
-
-      skillsHeader.forEach((el) => {
-        el.addEventListener("click", toggleSkills);
-      });
-
-      /*==================== QUALIFICATION TABS ====================*/
-      const tabs = document.querySelectorAll("[data-target]"),
-        tabContents = document.querySelectorAll("[data-content]");
-
-      tabs.forEach((tab) => {
-        tab.addEventListener("click", () => {
-          const target = document.querySelector(tab.dataset.target);
-
-          tabContents.forEach((tabContent) => {
-            tabContent.classList.remove("qualification__active");
-          });
-          target.classList.add("qualification__active");
-
-          tabs.forEach((tab) => {
-            tab.classList.remove("qualification__active");
-          });
-          tab.classList.add("qualification__active");
-        });
-      });
-
-      /*==================== SERVICES MODAL ====================*/
-      const modalViews = document.querySelectorAll(".services__modal"),
-        modalButtons = document.querySelectorAll(".services__button"),
-        modalCloses = document.querySelectorAll(".services__modal-close");
-
-      let modal = function (modalClick) {
-        modalViews[modalClick].classList.add("active-modal");
-      };
-
-      modalButtons.forEach((modalButton, i) => {
-        modalButton.addEventListener("click", () => {
-          modal(i);
-        });
-      });
-
-      modalCloses.forEach((modalClose) => {
-        modalClose.addEventListener("click", () => {
-          modalViews.forEach((modalView) => {
-            modalView.classList.remove("active-modal");
-          });
-        });
-      });
-
-      /*==================== PORTFOLIO SWIPER  ====================*/
-      let swiperPortfolio = new Swiper(".portfolio__container", {
-        cssMode: true,
-        loop: true,
-
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-      });
-
-      /*==================== TESTIMONIAL ====================*/
-      let swiperTestimonial = new Swiper(".testimonial__container", {
-        grabCursor: true,
-        spaceBetween: 48,
-        loop: true,
-
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-          dynamicBullets: true,
-        },
-        breakpoints: {
-          568: {
-            slidesPerView: 1,
-          },
-        },
-      });
-
-      /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
-      const sections = document.querySelectorAll("section[id]");
-
-      function scrollActive() {
-        const scrollY = window.pageYOffset;
-
-        sections.forEach((current) => {
-          const sectionHeight = current.offsetHeight;
-          const sectionTop = current.offsetTop - 50;
-          let sectionId = current.getAttribute("id");
-
-          if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-            document
-              .querySelector(".nav__menu a[href*=" + sectionId + "]")
-              .classList.add("active-link");
-          } else {
-            document
-              .querySelector(".nav__menu a[href*=" + sectionId + "]")
-              .classList.remove("active-link");
-          }
-        });
-      }
-      window.addEventListener("scroll", scrollActive);
-
-      /*==================== CHANGE BACKGROUND HEADER ====================*/
-      function scrollHeader() {
-        const nav = document.getElementById("header");
-        // When the scroll is greater than 200 viewport height, add the scroll-header class to the header tag
-        if (this.scrollY >= 80) nav.classList.add("scroll-header");
-        else nav.classList.remove("scroll-header");
-      }
-      window.addEventListener("scroll", scrollHeader);
-
-      /*==================== SHOW SCROLL UP ====================*/
-      function scrollUp() {
-        const scrollUp = document.getElementById("scroll-up");
-        // When the scroll is higher than 560 viewport height, add the show-scroll class to the "a" tag with the scroll
-        if (this.scrollY >= 560) scrollUp.classList.add("show-scroll");
-        else scrollUp.classList.remove("show-scroll");
-      }
-      window.addEventListener("scroll", scrollUp);
-
-      /*==================== DARK LIGHT THEME ====================*/
-      const themeButton = document.getElementById("theme-button");
-      const darkTheme = "dark-theme";
-      const iconTheme = "uil-sun";
-
-      // Previously selected topic (if user selected)
-      const selectedTheme = localStorage.getItem("selected-theme");
-      const selectedIcon = localStorage.getItem("selected-icon");
-
-      // We obtain the current theme that the interface has by validating the dark-theme class
-      const getCurrentTheme = () =>
-        document.body.classList.contains(darkTheme) ? "dark" : "light";
-      const getCurrentIcon = () =>
-        themeButton.classList.contains(iconTheme) ? "uil-moon" : "uil-sun";
-
-      // We validate if the user previously chose a topic
-      if (selectedTheme) {
-        // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
-        document.body.classList[selectedTheme === "dark" ? "add" : "remove"](
-          darkTheme
-        );
-        themeButton.classList[selectedIcon === "uil-moon" ? "add" : "remove"](
-          iconTheme
-        );
-      }
-
-      // Activate / deactivate the theme manually with the button
-      themeButton.addEventListener("click", () => {
-        // Add or remove the dark / icon theme
-        document.body.classList.toggle(darkTheme);
-        themeButton.classList.toggle(iconTheme);
-        // We save the theme and the current icon that the user chose
-        localStorage.setItem("selected-theme", getCurrentTheme());
-        localStorage.setItem("selected-icon", getCurrentIcon());
-      });
-    </script>
+    <!--
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
